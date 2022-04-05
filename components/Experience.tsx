@@ -1,6 +1,12 @@
-import React from 'react';
+import React, { FC } from 'react';
 import userData from '../constants/data';
-
+interface Props {
+  title: any, 
+  desc: any, 
+  year: any, 
+  company: any, 
+  companyLink: any
+}
 export const Experience = () => {
     return (
         <section className="bg-white dark:bg-gray-800">
@@ -38,7 +44,7 @@ export const Experience = () => {
       );
     }
     
-    const ExperienceCard = ({ title, desc, year, company, companyLink }) => {
+    const ExperienceCard: FC<Props> = ({ title, desc, year, company, companyLink }) => {
       return (
         <div className="relative experience-card border p-4 rounded-md shadow-xl bg-white dark:bg-gray-800 z-10 mx-4">
           <h1 className="absolute -top-10 md:-left-10 md:-top-10 text-4xl text-gray-200 font-bold dark:text-gray-800">

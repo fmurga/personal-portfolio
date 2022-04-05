@@ -1,6 +1,13 @@
-import React from 'react';
+import Image from 'next/image';
+import React, { FC } from 'react';
 import userData from '../constants/data';
 
+interface Props {
+  title: any,
+  link: any,
+  imgUrl: any,
+  number: any
+}
 
 export const Projects = () => {
     return (
@@ -15,6 +22,7 @@ export const Projects = () => {
             <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20 pb-40">
               {userData.projects.map((proj, idx) => (
                 <ProjectCard
+                  key={idx}
                   title={proj.title}
                   link={proj.link}
                   imgUrl={proj.imgUrl}
@@ -27,12 +35,12 @@ export const Projects = () => {
       );
     }
     
-    const ProjectCard = ({ title, link, imgUrl, number }) => {
+    const ProjectCard: FC<Props> = ({ title, link, imgUrl, number }) => {
       return (
         <a href={link} className="w-full block shadow-2xl">
           <div className="relative overflow-hidden">
             <div className="h-72 object-cover">
-              <img
+              <Image
                 src={imgUrl}
                 alt="portfolio"
                 className="transform hover:scale-125 transition duration-2000 ease-out object-cover h-full w-full"

@@ -15,10 +15,10 @@ export const Contact = () => {
         <div className="md:ml-4">
           <header className="">
             <h1 className="text-gray-50 font-semibold text-2xl">
-              Get in touch, let's talk.
+              Get in touch, let&aposs talk.
             </h1>
             <p className="font-light text-base text-gray-200 mt-2">
-              Fill in the details and I'll get back to you as soon as I can.
+              Fill in the details and I&aposll get back to you as soon as I can.
             </p>
           </header>
           <div className="icons-container inline-flex flex-col my-20">
@@ -168,7 +168,6 @@ export const Contact = () => {
           </label>
           <textarea
             rows={4}
-            type="text"
             className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
             name="message"
           ></textarea>

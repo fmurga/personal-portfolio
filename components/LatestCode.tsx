@@ -1,17 +1,25 @@
-import React, { useEffect, useState } from "react";
+import React, { FC, useEffect, useState } from "react";
 import Link from "next/link";
 
 import userData from "../constants/data";
 
+interface Props {
+  repositories?: any;
+  latestRepo?: any;
+}
 
-export const LatestCode = ({ repositories }) => {
+export const LatestCode: FC<Props> = ({ repositories }) => {
   const [repos, setRepos] = useState([]);
 
+  
   useEffect(() => {
     // let latestRepos = await getLatestRepos(userData);
     // console.log("latestRepos", latestRepos);
     setRepos(repositories);
-  }, []);
+    return () => {
+      setRepos([]);
+    }
+  }, [repositories]);
   
   return (
     <section className="bg-[#F1F1F1] -mt-40 dark:bg-gray-900 pb-40">
@@ -56,7 +64,7 @@ export const LatestCode = ({ repositories }) => {
   );
 }
 
-const GithubRepoCard = ({ latestRepo }) => {
+const GithubRepoCard: FC<Props> = ({ latestRepo }) => {
   return (
     <div className="github-repo">
       <h1 className="font-semibold text-xl dark:text-gray-200 text-gray-700">

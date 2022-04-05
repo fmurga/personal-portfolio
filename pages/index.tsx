@@ -8,8 +8,8 @@ import { NextPage } from "next";
 
 const Home: NextPage = () => {
   return (
-    <ContainerBlock
-    title="Facu Murga - Developer, Engineer"
+    //@ts-ignore: disable-next-line
+    <ContainerBlock title="Facu Murga - Developer, Engineer"
     description="This is my personal portfolio"
     >
     <Hero />

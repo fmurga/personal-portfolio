@@ -1,7 +1,11 @@
-import React from 'react'
-import { RoughNotation } from 'react-rough-notation'
+import React, { FC } from 'react'
+import { RoughNotation } from 'react-rough-notation';
+interface Props {
+  color: string;
+  children: any;
+}
 
-export const RainbowHighligth = ({ color, children }) => {
+export const RainbowHighligth: FC<Props> = ({ color, children }) => {
       // Change the animation duration depending on length of text we're animating (speed = distance / time)
   const animationDuration = Math.floor(30 * children.length);
   return (

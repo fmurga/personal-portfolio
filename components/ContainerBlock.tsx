@@ -1,15 +1,21 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
+import { FC } from "react";
 import { Footer } from "./Footer";
 import { Navbar } from "./Navbar";
 
-export const ContainerBlock = ({children, ...customMeta}) => {
+interface Props {
+  children: any;
+}
+
+export const ContainerBlock: FC<Props> = ({children, ...customMeta}) => {
     const router = useRouter();
     const meta = {
         title: "Facundo Murga - Developer, Systems Engineer",
         description: "I am developer taking my first steps and looking for an oportunity to prove my skills",
         image: "/avatar.png",
         type: "website",
+        date: new Date().toString(),
         ...customMeta,
     }
   return (
