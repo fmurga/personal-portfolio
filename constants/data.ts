@@ -8,44 +8,19 @@ const userData = {
     address: "Corodoba, Cordoba, Argentina.",
     projects: [
       {
-        title: "Tailwind Master Kit",
-        link: "https://tailwindmasterkit.com",
-        imgUrl: "/tmk.jpg",
-      },
-      {
         title: "SoftMiners",
         link: "https://softminers.com",
-        imgUrl: "",
+        imgUrl: "/softminers.png",
       },
       {
         title: "Portfolio",
         link: "https://portfolio-alpha-dusky-75.vercel.app",
-        imgUrl: "/",
+        imgUrl: "/portfolio.png",
       },
       {
-        title: "WineStore",
-        link: "",
-        imgUrl: "/",
-      },
-      {
-        title: "Algochurn",
-        link: "https://algochurn.com",
-        imgUrl: "/algochurn.png",
-      },
-      {
-        title: "Playground",
-        link: "https://play.placeholdertech.in",
-        imgUrl: "/playground.png",
-      },
-      {
-        title: "Feedmeback",
-        link: "https://feedmeback.vercel.app",
-        imgUrl: "/feedmeback.png",
-      },
-      {
-        title: "Devmedium",
-        link: "https://devmedium.vercel.app",
-        imgUrl: "/devmedium.png",
+        title: "Hulu-Clone",
+        link: "https://hulu-clone-practice-9ut597b0d-fmurga.vercel.app",
+        imgUrl: "/hulu-clone.png",
       },
     ],
     about: {
