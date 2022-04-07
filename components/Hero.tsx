@@ -27,11 +27,6 @@ export const Hero = () => {
             Programmer.
           </h1>
         </RainbowHighligth>
-        <RainbowHighligth color={colors[3]}>
-          <h1 className="text-4xl md:text-8xl font-bold text-gray-700 dark:text-gray-200 my-2">
-            Youtuber.
-          </h1>
-        </RainbowHighligth>
       </RoughNotationGroup>
     </div>
     {/* Image container */}
@@ -53,7 +48,7 @@ export const Hero = () => {
                 d="M4.854 1.146a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L4 2.707V12.5A2.5 2.5 0 0 0 6.5 15h8a.5.5 0 0 0 0-1h-8A1.5 1.5 0 0 1 5 12.5V2.707l3.146 3.147a.5.5 0 1 0 .708-.708l-4-4z"
               />
             </svg>
-            <p className="font-mono">That&aposs me</p>
+            <p className="font-mono">That&apos;s me</p>
           </div>
         </div>
       </div>

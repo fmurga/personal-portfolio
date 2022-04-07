@@ -43,7 +43,7 @@ export const AboutMe = () => {
                     >
                       mail
                     </a>
-                    and I&aposll get back. I swear.
+                    and I&apos;ll get back. I swear.
                   </p>
                 </div>
                 <div className="mt-8">
@@ -51,7 +51,7 @@ export const AboutMe = () => {
                     Job Opportunities
                   </h1>
                   <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
-                    I&aposm looking for a job currently, If you see me as a good fit,
+                    I&apos;m looking for a job currently, If you see me as a good fit,
                     check my
                     <a
                       href={userData.resumeUrl}
@@ -60,7 +60,7 @@ export const AboutMe = () => {
                     >
                       CV
                     </a>
-                    and I&aposd love to work for you.
+                    and I&apos;d love to work for you.
                   </p>
                 </div>
                 {/* Social Links */}
@@ -142,69 +142,69 @@ export const AboutMe = () => {
                 ))}
     
                 <h1 className="bg-red-500 text-3xl rounded-md px-2 py-1 inline-block font-bold text-gray-50">
-                  Tech Stack
+                  Tecnologias
                 </h1>
                 <div className="flex flex-row flex-wrap mt-8">
-                  <Image
+                  {/* <Image width={80} height={80}
                     alt="technologie"
-                    src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"
+                    src=""
                     className="h-20 w-20 mx-4 my-4"
                   />
-                  <Image
+                  <Image width={80} height={80}
                     alt="technologie"
-                    src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/java/java.png"
+                    src=""
                     className="h-20 w-20 mx-4 my-4"
                   />
-                  <Image
+                  <Image width={80} height={80}
                     alt="technologie"
-                    src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"
+                    src=""
                     className="h-20 w-20 mx-4 my-4"
                   />
-                  <Image
+                  <Image width={80} height={80}
                     alt="technologie"
-                    src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"
+                    src=""
                     className="h-20 w-20 mx-4 my-4"
                   />
-                  <Image
+                  <Image width={80} height={80}
                     alt="technologie"
-                    src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"
+                    src=""
                     className="h-20 w-20 mx-4 my-4"
                   />
-                  <Image
+                  <Image width={80} height={80}
                     alt="technologie"
-                    src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/angular/angular.png"
+                    src=""
                     className="h-20 w-20 mx-4 my-4"
                   />
-                  <Image
+                  <Image width={80} height={80}
                     alt="technologie"
-                    src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/vue/vue.png"
+                    src=""
                     className="h-20 w-20 mx-4 my-4"
                   />
-                  <Image
+                  <Image width={80} height={80}
                     alt="technologie"
-                    src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png"
+                    src=""
                     className="h-20 w-20 mx-4 my-4"
                   />
-                  <Image
+                  <Image width={80} height={80}
                     alt="technologie"
-                    src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"
+                    src=""
                     className="h-20 w-20 mx-4 my-4"
                   />
-                  <Image
+                  <Image width={80} height={80}
                     alt="technologie"
-                    src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png"
+                    src=""
                     className="h-20 w-20 mx-4 my-4"
                   />
-                  <Image
+                  <Image width={80} height={80}
                     alt="technologie"
-                    src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png"
+                    src=""
                     className="h-20 w-20 mx-4 my-4"
                   />
-                  <Image
+                  <Image width={80} height={80}
                     alt="technologie"
-                    src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png"
+                    src=""
                     className="h-20 w-20 mx-4 my-4"
-                  />
+                  /> */}
                 </div>
               </div>
             </div>

@@ -2,24 +2,30 @@ import React, { FC, useEffect, useState } from "react";
 import Link from "next/link";
 
 import userData from "../constants/data";
+import getLatestRepos from "../lib/getLatestRepos";
 
 interface Props {
-  repositories?: any;
-  latestRepo?: any;
+  latestRepo?: any
 }
 
-export const LatestCode: FC<Props> = ({ repositories }) => {
+export const LatestCode: FC = () => {
   const [repos, setRepos] = useState([]);
+  const token = process.env.GITHUB_AUTH_TOKEN;
 
+
+  const  getLatestRepositories =  () => {
+    let latestRepos =  getLatestRepos(userData, token);
+    return latestRepos;
+  }
   
   useEffect(() => {
-    // let latestRepos = await getLatestRepos(userData);
-    // console.log("latestRepos", latestRepos);
-    setRepos(repositories);
+    let repositories = getLatestRepositories()
+      .then((latestRepos) => {setRepos(latestRepos)}).catch((error) => {console.error(error)})
+    ;
     return () => {
       setRepos([]);
     }
-  }, [repositories]);
+  }, []);
   
   return (
     <section className="bg-[#F1F1F1] -mt-40 dark:bg-gray-900 pb-40">
@@ -55,9 +61,9 @@ export const LatestCode: FC<Props> = ({ repositories }) => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-10 lg:-mt-10 gap-y-20">
         {/* Single github Repo */}
 
-        {repos &&
+        {repos && repos.length > 0 &&
           repos.map((latestRepo, idx) => (
-            <GithubRepoCard latestRepo={latestRepo} key="idx" />
+            <GithubRepoCard latestRepo={latestRepo} key={idx} />
           ))}
       </div>
     </section>
@@ -77,7 +83,7 @@ const GithubRepoCard: FC<Props> = ({ latestRepo }) => {
         href={latestRepo.clone_url}
         className="font-semibold group flex flex-row space-x-2 w-full items-center"
       >
-        <p>View Repository </p>
+        <p>Ver Repositorio </p>
         <div className="transform  group-hover:translate-x-2 transition duration-300">
           &rarr;
         </div>

@@ -41,6 +41,7 @@ export const Projects = () => {
           <div className="relative overflow-hidden">
             <div className="h-72 object-cover">
               <Image
+              layout="fill"
                 src={imgUrl}
                 alt="portfolio"
                 className="transform hover:scale-125 transition duration-2000 ease-out object-cover h-full w-full"
