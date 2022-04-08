@@ -8,7 +8,7 @@ export const AboutMe = () => {
         <section className="bg-white dark:bg-gray-800">
           <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
             <h1 className=" text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
-              About Me.
+              Sobre Mi.
             </h1>
           </div>
           <div className="bg-[#F1F1F1] -mt-10 dark:bg-gray-900">
@@ -17,7 +17,7 @@ export const AboutMe = () => {
                 className="leading-loose text-2xl md:text-4xl font-semibold  mx-4"
                 style={{ lineHeight: "3rem" }}
               >
-                {userData.about.title}. Currently working on
+                {userData.about.title}. Actualemete trabajando en
                 <a
                   className="bg-red-500 rounded-md px-2 py-1 text-white"
                   href={userData.about.currentProjectUrl}
@@ -33,39 +33,38 @@ export const AboutMe = () => {
               <div className="inline-flex flex-col">
                 <div>
                   <h1 className="text-xl font-semibold text-gray-700 dark:text-gray-200">
-                    Contact
+                    Contacto
                   </h1>
                   <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
-                    For any sort help / enquiry, shoot a
+                    Ante cualquier consulta enviame un
                     <a
                       href={`mailto:${userData.email}`}
                       className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
                     >
-                      mail
+                       {" "}mail{" "}
                     </a>
-                    and I&apos;ll get back. I swear.
+                    y en la brevedad te contesto.
                   </p>
                 </div>
                 <div className="mt-8">
                   <h1 className="text-xl font-semibold text-gray-700 dark:text-gray-200">
-                    Job Opportunities
+                    Oportunidades Laborales
                   </h1>
                   <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
-                    I&apos;m looking for a job currently, If you see me as a good fit,
-                    check my
+                    Actualmente buscando trabajo, si te interesa mi perfil te dejo mi 
                     <a
                       href={userData.resumeUrl}
                       target="__blank"
                       className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
                     >
-                      CV
+                      {" "}CV{" "}
                     </a>
-                    and I&apos;d love to work for you.
+                    seria un gusto trabajar con ustedes.
                   </p>
                 </div>
                 {/* Social Links */}
                 <h1 className="text-xl font-semibold text-gray-700 mt-8 dark:text-gray-200">
-                  Social Links
+                  Redes Sociales
                 </h1>
                 <div className="mt-4 ml-4">
                   <div className="flex flex-row justify-start items-center ">
@@ -142,69 +141,69 @@ export const AboutMe = () => {
                 ))}
     
                 <h1 className="bg-red-500 text-3xl rounded-md px-2 py-1 inline-block font-bold text-gray-50">
-                  Tecnologias
+                  Tecnologias y Herramientas
                 </h1>
-                <div className="flex flex-row flex-wrap mt-8">
-                  {/* <Image width={80} height={80}
+                <div className="flex flex-row flex-wrap mt-4">
+                  <img width="auto" height="auto"
                     alt="technologie"
-                    src=""
+                    src="/firebase.png"
                     className="h-20 w-20 mx-4 my-4"
                   />
-                  <Image width={80} height={80}
+                  <img width="auto" height="auto"
                     alt="technologie"
-                    src=""
-                    className="h-20 w-20 mx-4 my-4"
+                    src="/nextjs.jpg"
+                    className="h-20 w-auto mx-4 my-4"
                   />
-                  <Image width={80} height={80}
+                  <img width="auto" height="auto"
                     alt="technologie"
-                    src=""
-                    className="h-20 w-20 mx-4 my-4"
+                    src="/react.png"
+                    className="h-20 w-auto mx-4 my-4"
                   />
-                  <Image width={80} height={80}
+                  <img width="auto" height="auto"
                     alt="technologie"
-                    src=""
-                    className="h-20 w-20 mx-4 my-4"
+                    src="/nest.png"
+                    className="h-20 w-auto mx-4 my-4"
                   />
-                  <Image width={80} height={80}
+                  <img width="auto" height="auto"
                     alt="technologie"
-                    src=""
-                    className="h-20 w-20 mx-4 my-4"
+                    src="/javascript.png"
+                    className="h-20 w-auto mx-4 my-4"
                   />
-                  <Image width={80} height={80}
+                  <img width="auto" height="auto"
                     alt="technologie"
-                    src=""
-                    className="h-20 w-20 mx-4 my-4"
+                    src="/php.png"
+                    className="h-20 w-auto mx-4 my-4"
                   />
-                  <Image width={80} height={80}
+                  <img width="auto" height="auto"
                     alt="technologie"
-                    src=""
-                    className="h-20 w-20 mx-4 my-4"
+                    src="/html.png"
+                    className="h-20 w-auto mx-4 my-4"
                   />
-                  <Image width={80} height={80}
+                  <img width="auto" height="auto"
                     alt="technologie"
-                    src=""
-                    className="h-20 w-20 mx-4 my-4"
+                    src="/css.jpg"
+                    className="h-20 w-auto mx-4 my-4"
                   />
-                  <Image width={80} height={80}
+                  <img width="auto" height="auto"
                     alt="technologie"
-                    src=""
-                    className="h-20 w-20 mx-4 my-4"
+                    src="/tailwind.png"
+                    className="h-20 w-auto mx-4 my-4"
                   />
-                  <Image width={80} height={80}
+                  <img width="auto" height="auto"
                     alt="technologie"
-                    src=""
-                    className="h-20 w-20 mx-4 my-4"
+                    src="/bootstrap.png"
+                    className="h-20 w-auto mx-4 my-4"
                   />
-                  <Image width={80} height={80}
+                  <img width="auto" height="auto"
                     alt="technologie"
-                    src=""
-                    className="h-20 w-20 mx-4 my-4"
+                    src="/scrum.png"
+                    className="h-20 w-auto mx-4 my-4"
                   />
-                  <Image width={80} height={80}
+                  <img width="auto" height="auto"
                     alt="technologie"
-                    src=""
-                    className="h-20 w-20 mx-4 my-4"
-                  /> */}
+                    src="/jira.png"
+                    className="h-20 w-auto mx-4 my-4"
+                  />
                 </div>
               </div>
             </div>

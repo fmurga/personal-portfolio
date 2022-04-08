@@ -44,7 +44,7 @@ export const Navbar = () => {
                 : "text-gray-600 dark:text-gray-300 font-normal "
             }`}
           >
-            About{" "}
+            Sobre Mi{" "}
             {router.asPath === "/about" && (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +70,7 @@ export const Navbar = () => {
                 : "text-gray-600 dark:text-gray-300 font-normal "
             }`}
           >
-            Projects
+            Proyectos
             {router.asPath === "/projects" && (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -96,7 +96,7 @@ export const Navbar = () => {
                 : "text-gray-600 dark:text-gray-300 font-normal "
             }`}
           >
-            Experience{" "}
+            Experiencia{" "}
             {router.asPath === "/experience" && (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -122,7 +122,7 @@ export const Navbar = () => {
                 : "text-gray-600 dark:text-gray-300 font-normal "
             }`}
           >
-            Contact
+            Contacto
             {router.asPath === "/contact" && (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -225,22 +225,22 @@ export const Navbar = () => {
     <div className="space-x-8 block md:hidden mt-4">
       <Link href="/about">
         <a className="text-base font-normal text-gray-600 dark:text-gray-300">
-          About
+          Sobre Mi
         </a>
       </Link>
       <Link href="/projects">
         <a className="text-base font-normal text-gray-600 dark:text-gray-300">
-          Projects
+          Proyectos
         </a>
       </Link>
       <Link href="/experience">
         <a className="text-base font-normal text-gray-600 dark:text-gray-300">
-          Experience
+          Experiencia
         </a>
       </Link>
       <Link href="/contact">
         <a className="text-base font-normal text-gray-600 dark:text-gray-300">
-          Contact
+          Contacto
         </a>
       </Link>
     </div>

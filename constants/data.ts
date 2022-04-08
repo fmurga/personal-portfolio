@@ -22,6 +22,11 @@ const userData = {
         link: "https://hulu-clone-practice-9ut597b0d-fmurga.vercel.app",
         imgUrl: "/hulu-clone.png",
       },
+      {
+        title: "Wine-Store",
+        link: "https://wine-store-new-era.netlify.app",
+        imgUrl: "/wine-store.png",
+      },
     ],
     about: {
       title:
@@ -79,7 +84,7 @@ const userData = {
       },
     ],
     resumeUrl:
-      "",
+      "https://drive.google.com/file/d/1eaHQ3X3ypvwlo78gGcpi97fknOWN1-q8/view?usp=sharing",
     socialLinks: {
       instagram: "https://instagram.com/facundomurga",
       twitter: "https://twitter.com/facundomurga",

@@ -1,13 +1,25 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import userData from '../constants/data';
-
+import emailjs from '@emailjs/browser';
 
 export const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e: { preventDefault: () => void; }) => {
+    e.preventDefault();
+    //@ts-ignore: disable next line
+    emailjs.sendForm('service_6lecmsa', 'template_9eskojb', form.current, 'user_S0PNXtP9emPfQmzDnA79d')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
   return (
     <section>
     <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800 antialiased">
       <h1 className=" text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
-        Contact
+        Contacto
       </h1>
     </div>
     <div className="relative z-10 rounded-md shadow-md bg-[#02044A] p-4 md:p-10 lg:p-20 max-w-6xl mx-auto mb-20 -mt-4">
@@ -15,10 +27,10 @@ export const Contact = () => {
         <div className="md:ml-4">
           <header className="">
             <h1 className="text-gray-50 font-semibold text-2xl">
-              Get in touch, let&apos;s talk.
+              Contactame y hablemos.
             </h1>
             <p className="font-light text-base text-gray-200 mt-2">
-              Fill in the details and I&apos;ll get back to you as soon as I can.
+              Completa el formulario y me pondre en contacto en la brevedad.
             </p>
           </header>
           <div className="icons-container inline-flex flex-col my-20">
@@ -142,10 +154,11 @@ export const Contact = () => {
             </a>
           </div>
         </div>
-        <form className="form rounded-lg bg-white p-4 flex flex-col">
+        {/* @ts-ignore: disable next line */}
+        <form ref={form} onSubmit={sendEmail} className="form rounded-lg bg-white p-4 flex flex-col">
           <label htmlFor="name" className="text-sm text-gray-600 mx-4">
             {" "}
-            Your Name
+            Nombre
           </label>
           <input
             type="text"
@@ -164,7 +177,7 @@ export const Contact = () => {
             htmlFor="message"
             className="text-sm text-gray-600 mx-4 mt-4"
           >
-            Message
+            Mensaje
           </label>
           <textarea
             rows={4}
@@ -173,9 +186,9 @@ export const Contact = () => {
           ></textarea>
           <button
             type="submit"
-            className="bg-blue-500 rounded-md w-1/2 mx-4 mt-8 py-2 text-gray-50 text-xs font-bold"
+            className="bg-blue-500 rounded-md w-1/2 mx-4 mt-8 py-2 text-gray-50 text-xs font-bold focus:bg-blue-300"
           >
-            Send Message
+            Contactar
           </button>
         </form>
       </div>
